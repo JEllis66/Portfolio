@@ -1,16 +1,7 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-color: white;
+  overflow: hidden !important;
 }
 
 .App-header {
@@ -21,18 +12,86 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(24, 24, 24);
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#bin{
+  overflow-wrap: break-word;
+}
+
+.group0, .group1, .group2, .group3, .group4, .group5, .group6, .group7, .group8, .group9, .groupA, .groupB, .groupC, .groupD, .groupE, .groupF, .groupG, .groupH, .groupI, .groupJ{
+  color: rgba(0, 128, 0, 0.1);
+  font-size: 16pt;
+}
+
+#homeBtn{
+  color: white;
+  background-color: none; 
+}
+
+#home{
+  overflow: hidden !important;
+  background-color: black;
+}
+
+#profPicNav{
+  height: 60px;
+}
+
+#navName{
+  margin-left: 12px;
+  padding-top: 10px;
+}
+
+.hr{
+  color: black;
+}
+
+#navigationBar{
+  height: 70px;
+}
+
+#about{
+  height: 100vh;
+}
+
+.navvy, #navName{
+  color: #0275d8;
+  font-size: 16pt;
+}
+
+.navvy:hover{
+  color: #ff003c;
+}
+
+.about{
+  border-top: lightgray;
+  border-bottom: lightgrey;
+  text-align: start;
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+#projs{
+  width: 100vw;
+}
+
+#appImg{
+  position: absolute;
+  top: -32vh;
+  left: 28vh;
+  height: 20vh;
+  z-index: 15;
+}
+
+#projectPage,#projectPage2{
+  background-color: white;
+}
+
+.detailText{
+  font-size: 18pt;
 }
