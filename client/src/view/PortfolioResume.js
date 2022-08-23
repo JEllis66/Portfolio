@@ -7,7 +7,7 @@ const PortfolioResume = () => {
 
 
     return (
-        <div>
+        <div id="resume">
             <Navbar/>
             <hr className="hr mb-5"/>
             <Resume/>

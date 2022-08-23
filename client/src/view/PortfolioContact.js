@@ -7,7 +7,7 @@ const PortfolioContact = () => {
 
 
     return (
-        <div>
+        <div id="contact">
             <Navbar/>
             <hr className="hr mb-5"/>
             <Contact/>

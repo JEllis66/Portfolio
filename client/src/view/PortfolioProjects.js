@@ -7,10 +7,10 @@ const PortfolioProjects = () => {
 
 
     return (
-        <div>
-            <Navbar/>
+        <div id="projectsPage">
+            <div id="navVH"><Navbar/></div>
             <hr className="hr mb-1"/>
-            <Projects/>
+            <div id="projDiv"><Projects/></div>
         </div>
     )
 

@@ -1,11 +1,11 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import {useState} from 'react';
+
 import nScreen from "../images/numericleScreen.png"
 import nAltScreen from "../images/numericleAltScreen.png"
 import lScreen from "../images/lancasterScreen.png"
-import Numericle from "../images/numericleLogo.png"
-import AppScreen from "./AppScreen";
+import git from "../images/git3.png"
 
 
 const Projects = () => {
@@ -19,14 +19,26 @@ const Projects = () => {
         if(showDetails === false && projNum === 1){
             setPic([nAltScreen]);
             setDirection("↑");
+        } else if(showDetails === false && projNum === 2){
+            setPic([lScreen]);
+            setDirection("↑");
         } else if(showDetails === true && projNum === 1){
             setPic([nScreen]);
+            setDirection("↓");
+        } else if(showDetails === true && projNum === 2){
+            setPic([lScreen]);
             setDirection("↓");
         }
         setShowDetails(!showDetails);
     }
 
+    function reset(){
+            setShowDetails(false);
+            setDirection("↓");
+    }
+
     function nextProject(){
+        reset();
         if(projNum === 1){
             setProjNum(2)
             setPic(lScreen)
@@ -35,29 +47,30 @@ const Projects = () => {
             setProjNum(1)
             setPic(nScreen);
         }
-        setDirection("↑")
     }
 
     return (
-        <div id="projectPage" className="justify-content-center">
+        <div id="projectPage" className="justify-content-center mb-5 pb-5 whiten">
             <img id="projs" src={pic}/>
-            <div className="d-flex justify-content-around">   
+            <div id="projButtons" className="d-flex justify-content-around whiten">   
                 <button onClick={() => toggleDetails()} className="btn btn-primary mr-1">Details {direction}</button>
-                <button onClick={() => nextProject()} className="btn btn-primary ml-1">Next Project</button>
+                <button onClick={() => nextProject()} className="btn btn-success ml-1">Next Project</button>
             </div> 
 
             {
                 showDetails ? 
-                <div id="projectPage2" className="mt-4">
+                <div id="projectPage2" className="mt-5 pb-5 whiten">
                     {projNum === 1 ? 
-                        <div>
-                            <h3 className="text-primary">Numericle: <span className="text-secondary">MERN Application</span></h3> 
-                            <p className="text-secondary detailText">Find the missing character's of the daily equation that matches the given Daily Solution, "Wordle" Style</p>
+                        <div id="details1" className="whiten">
+                            <h3 className="text-primary whiten"><a className="text-decoration-none whiten" href="http://numericle.ddns.net">Numericle:</a> <span className="text-secondary whiten">MERN Application - </span></h3>
+                            <p className="text-secondary detailText whiten">Find the missing character's of the daily equation that matches the given Daily Solution, "Wordle" Style!</p>
+                            <p className="whiten"><span><a className="whiten text-decoration-none" href="http://numericle.ddns.net"> Link to deployed Project</a></span> | <span><a className="whiten text-decoration-none" href="https://github.com/JEllis66/Numericle-Deployment"> Link to code </a></span> <img id='gitimg' src={git}/></p>
                         </div>
                         :
-                        <div>
-                            <h3 ><span className='text-primary'>Lancaster's:</span></h3>  
-                            <p className="text-secondary detailText">Java/Spring Application - An application for an interactive Murder Myserty!</p>
+                        <div className="whiten" id="details2">
+                            <h3 className="whiten"><a className="text-danger text-decoration-none whiten" href="#">Lancaster's Theater:</a> <span className="text-secondary whiten"> Java/Spring Application - </span></h3>
+                            <p className="text-secondary detailText whiten">An application for an interactive Murder Mystery Party!</p>
+                            <p className="whiten"><span><a className="whiten text-decoration-none" href="#"> Link to deployed Project</a></span> | <span><a className="whiten text-decoration-none" href="https://github.com/JEllis66/Murder_Mystery"> Link to code </a></span> <img id='gitimg' src={git}/></p>
                         </div>
                     }
                 </div>
@@ -65,6 +78,7 @@ const Projects = () => {
                 null
             }
         </div>
+        
     )
 
 }

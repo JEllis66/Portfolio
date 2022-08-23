@@ -1,12 +1,15 @@
+/* *{
+  text-align: center;
+} */
+
 .App {
   text-align: center;
-  background-color: white;
-  overflow: hidden !important;
+  background-color: rgb(48, 48, 48);
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,6 +24,8 @@
 
 #bin{
   overflow-wrap: break-word;
+  background-color: black !important;
+  overflow: hidden !important
 }
 
 .group0, .group1, .group2, .group3, .group4, .group5, .group6, .group7, .group8, .group9, .groupA, .groupB, .groupC, .groupD, .groupE, .groupF, .groupG, .groupH, .groupI, .groupJ{
@@ -28,18 +33,28 @@
   font-size: 16pt;
 }
 
+.group0:hover, .group1:hover, .group2:hover, .group3:hover, .group4:hover, .group5:hover, .group6:hover, .group7:hover, .group8:hover, .group9:hover, .groupA:hover, .groupB:hover, .groupC:hover, .groupD:hover, .groupE:hover, .groupF:hover, .groupG:hover, .groupH:hover, .groupI:hover, .groupJ:hover{
+  color: rgba(255, 255, 255, 1) !important;
+  text-shadow: white;
+}
+
 #homeBtn{
   color: white;
-  background-color: none; 
+  background-color: none;
 }
 
 #home{
   overflow: hidden !important;
-  background-color: black;
+  background-color: black !important;
 }
 
 #profPicNav{
   height: 60px;
+}
+
+#gitimg{
+  height: 40px;
+  background-color: white;
 }
 
 #navName{
@@ -48,19 +63,32 @@
 }
 
 .hr{
-  color: black;
+  color: lightgray;
 }
 
 #navigationBar{
   height: 70px;
 }
 
-#about{
-  height: 100vh;
+#about, #contact,#resume{
+  height: 100%;
+}
+
+#projectsPage{
+  height: 100%;
+}
+
+#navVH{
+  background-color: rgb(48, 48, 48);
+}
+
+#projDiv{
+  height: 100%;
+  background-color: white;
 }
 
 .navvy, #navName{
-  color: #0275d8;
+  color: #008000;
   font-size: 16pt;
 }
 
@@ -88,10 +116,653 @@
   z-index: 15;
 }
 
-#projectPage,#projectPage2{
-  background-color: white;
+#projectPage,#projectPage2,.details1,.details2,.text-primary,.whiten{
+  background-color:white ;
 }
 
 .detailText{
   font-size: 18pt;
+  background-color: white;
 }
+
+#projButtons{
+  background-color: white;
+}
+
+#aboutPic{
+  height: 30vh;
+  width: 30vh;
+  border-radius: 0em;
+  margin-right: 30px;
+}
+
+#aboutContent{
+  margin-left: 30px;
+}
+
+.aboutLine{
+  margin-top: 10px;
+  color: black;
+  height: 3px;
+}
+
+.darken{
+  background-color: rgb(48, 48, 48);
+}
+
+/* .scrolly{
+  overflow-y: scroll !important;
+} */
+
+/* animations */
+
+.group0{
+  color: rgb(0, 128, 0);
+  animation: blinker 10s linear infinite;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 0.2;
+  }
+
+  1% {
+    opacity: 0.3;
+  }
+
+  2% {
+    opacity: 0.4;
+  }
+
+  3% {
+    opacity: 0.5;
+  }
+
+  4% {
+    opacity: 0.6;
+  }
+
+  5% {
+    opacity: 0.6;
+  }
+
+
+  6% {
+    opacity: 0.5;
+  }
+
+  7% {
+    opacity: 0.4;
+  }
+
+  8% {
+    opacity: 0.3;
+  }
+
+  9% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+}
+
+
+
+.group1 {
+  color: rgba(0, 128, 0, 1);
+  animation: blinker2 10s linear infinite;
+}
+
+@keyframes blinker2 {
+  0% {
+    opacity: 0.2;
+  }
+
+  9% {
+    opacity: 0.2;
+  }
+
+  10% {
+    opacity: 0.3;
+  }
+
+  11%{
+    opacity: 0.4;
+  }
+
+  12% {
+    opacity: 0.5;
+  }
+
+  13% {
+    opacity: 0.6;
+  }
+
+  14% {
+    opacity: 0.6;
+  }
+
+  15% {
+    opacity: 0.5;
+  }
+
+  16% {
+    opacity: 0.4;
+  }
+
+  17% {
+    opacity: 0.3;
+  }
+
+  18% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 0.2;
+  }
+
+}
+
+  .group2 {
+    color: rgba(0, 128, 0, 1);
+    animation: blinker3 10s linear infinite;
+  }
+  
+  @keyframes blinker3 {
+    0% {
+      opacity: 0.2;
+    }
+  
+    18% {
+      opacity: 0.2;
+    }
+  
+    19% {
+      opacity: 0.3;
+    }
+  
+    20%{
+      opacity: 0.4;
+    }
+  
+    21% {
+      opacity: 0.5;
+    }
+  
+    22% {
+      opacity: 0.6;
+    }
+  
+    23% {
+      opacity: 0.6;
+    }
+  
+    24% {
+      opacity: 0.5;
+    }
+  
+    25% {
+      opacity: 0.4;
+    }
+  
+    26% {
+      opacity: 0.3;
+    }
+  
+    27% {
+      opacity: 0.2;
+    }
+  
+    100% {
+      opacity: 0.2;
+    }
+
+  }
+
+
+  .group3 {
+    color: rgba(0, 128, 0, 1);
+    animation: blinker4 10s linear infinite;
+  }
+  
+  @keyframes blinker4 {
+    0% {
+      opacity: 0.2;
+    }
+  
+    27% {
+      opacity: 0.2;
+    }
+  
+    28% {
+      opacity: 0.3;
+    }
+  
+    29%{
+      opacity: 0.4;
+    }
+  
+    30% {
+      opacity: 0.5;
+    }
+  
+    31% {
+      opacity: 0.6;
+    }
+  
+    32% {
+      opacity: 0.6;
+    }
+  
+    33% {
+      opacity: 0.5;
+    }
+  
+    34% {
+      opacity: 0.4;
+    }
+  
+    35% {
+      opacity: 0.3;
+    }
+  
+    36% {
+      opacity: 0.2;
+    }
+  
+    100% {
+      opacity: 0.2;
+    }
+
+  }
+
+  .group4 {
+    color: rgba(0, 128, 0, 1);
+    animation: blinker5 10s linear infinite;
+  }
+  
+  @keyframes blinker5 {
+    0% {
+      opacity: 0.2;
+    }
+  
+    36% {
+      opacity: 0.2;
+    }
+  
+    37% {
+      opacity: 0.3;
+    }
+  
+    38%{
+      opacity: 0.4;
+    }
+  
+    39% {
+      opacity: 0.5;
+    }
+  
+    40% {
+      opacity: 0.6;
+    }
+  
+    41% {
+      opacity: 0.6;
+    }
+  
+    42% {
+      opacity: 0.5;
+    }
+  
+    43% {
+      opacity: 0.4;
+    }
+  
+    44% {
+      opacity: 0.3;
+    }
+  
+    45% {
+      opacity: 0.2;
+    }
+  
+    100% {
+      opacity: 0.2;
+    }
+
+  }
+
+  .group5 {
+    color: rgba(0, 128, 0, 1);
+    animation: blinker6 10s linear infinite;
+  }
+  
+  @keyframes blinker6 {
+    0% {
+      opacity: 0.2;
+    }
+  
+    45% {
+      opacity: 0.2;
+    }
+  
+    46% {
+      opacity: 0.3;
+    }
+  
+    47%{
+      opacity: 0.4;
+    }
+  
+    48% {
+      opacity: 0.5;
+    }
+  
+    49% {
+      opacity: 0.6;
+    }
+  
+    50% {
+      opacity: 0.6;
+    }
+  
+    51% {
+      opacity: 0.5;
+    }
+  
+    52% {
+      opacity: 0.4;
+    }
+  
+    53% {
+      opacity: 0.3;
+    }
+  
+    54% {
+      opacity: 0.2;
+    }
+  
+    100% {
+      opacity: 0.2;
+    }
+
+  }
+
+  .group6 {
+    color: rgba(0, 128, 0, 1);
+    animation: blinker7 10s linear infinite;
+  }
+  
+  @keyframes blinker7 {
+    0% {
+      opacity: 0.2;
+    }
+  
+    54% {
+      opacity: 0.2;
+    }
+  
+    55% {
+      opacity: 0.3;
+    }
+  
+    56%{
+      opacity: 0.4;
+    }
+  
+    57% {
+      opacity: 0.5;
+    }
+  
+    58% {
+      opacity: 0.6;
+    }
+  
+    59% {
+      opacity: 0.6;
+    }
+  
+    60% {
+      opacity: 0.5;
+    }
+  
+    61% {
+      opacity: 0.4;
+    }
+  
+    62% {
+      opacity: 0.3;
+    }
+  
+    63% {
+      opacity: 0.2;
+    }
+  
+    100% {
+      opacity: 0.2;
+    }
+
+  }
+
+  .group7 {
+    color: rgba(0, 128, 0, 1);
+    animation: blinker8 10s linear infinite;
+  }
+  
+  @keyframes blinker8 {
+    0% {
+      opacity: 0.2;
+    }
+  
+    63% {
+      opacity: 0.2;
+    }
+  
+    64% {
+      opacity: 0.3;
+    }
+  
+    65%{
+      opacity: 0.4;
+    }
+  
+    66% {
+      opacity: 0.5;
+    }
+  
+    67% {
+      opacity: 0.6;
+    }
+  
+    68% {
+      opacity: 0.6;
+    }
+  
+    69% {
+      opacity: 0.5;
+    }
+  
+    70% {
+      opacity: 0.4;
+    }
+  
+    71% {
+      opacity: 0.3;
+    }
+  
+    72% {
+      opacity: 0.2;
+    }
+  
+    100% {
+      opacity: 0.2;
+    }
+
+  }
+
+  .group8 {
+    color: rgba(0, 128, 0, 1);
+    animation: blinker9 10s linear infinite;
+  }
+  
+  @keyframes blinker9 {
+    0% {
+      opacity: 0.2;
+    }
+  
+    72% {
+      opacity: 0.2;
+    }
+  
+    73% {
+      opacity: 0.3;
+    }
+  
+    74%{
+      opacity: 0.4;
+    }
+  
+    75% {
+      opacity: 0.5;
+    }
+  
+    76% {
+      opacity: 0.6;
+    }
+  
+    77% {
+      opacity: 0.6;
+    }
+  
+    78% {
+      opacity: 0.5;
+    }
+  
+    79% {
+      opacity: 0.4;
+    }
+  
+    80% {
+      opacity: 0.3;
+    }
+  
+    81% {
+      opacity: 0.2;
+    }
+  
+    100% {
+      opacity: 0.2;
+    }
+
+  }
+
+  .group9 {
+    color: rgba(0, 128, 0, 1);
+    animation: blinker10 10s linear infinite;
+  }
+  
+  @keyframes blinker10 {
+    0% {
+      opacity: 0.2;
+    }
+  
+    81% {
+      opacity: 0.2;
+    }
+  
+    82% {
+      opacity: 0.3;
+    }
+  
+    83%{
+      opacity: 0.4;
+    }
+  
+    84% {
+      opacity: 0.5;
+    }
+  
+    85% {
+      opacity: 0.6;
+    }
+  
+    86% {
+      opacity: 0.6;
+    }
+  
+    87% {
+      opacity: 0.5;
+    }
+  
+    88% {
+      opacity: 0.4;
+    }
+  
+    89% {
+      opacity: 0.3;
+    }
+  
+    90% {
+      opacity: 0.2;
+    }
+  
+    100% {
+      opacity: 0.2;
+    }
+
+  }
+
+  .groupA {
+    color: rgba(0, 128, 0, 1);
+    animation: blinker11 10s linear infinite;
+  }
+  
+  @keyframes blinker11 {
+    0% {
+      opacity: 0.2;
+    }
+  
+    91% {
+      opacity: 0.2;
+    }
+  
+    92% {
+      opacity: 0.3;
+    }
+  
+    93%{
+      opacity: 0.4;
+    }
+  
+    94% {
+      opacity: 0.5;
+    }
+  
+    95% {
+      opacity: 0.6;
+    }
+  
+    96% {
+      opacity: 0.6;
+    }
+  
+    97% {
+      opacity: 0.5;
+    }
+  
+    98% {
+      opacity: 0.4;
+    }
+  
+    99% {
+      opacity: 0.3;
+    }
+  
+    100% {
+      opacity: 0.2;
+    }
+
+  }
