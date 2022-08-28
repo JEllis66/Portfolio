@@ -14,12 +14,12 @@ const About = () => {
                 <hr className='aboutLine mt-5'/>
 
                 <h2 className="text-primary mb-3 darken"> Background:</h2>
-                <h3 className="text-white"> Grew up on Cape Cod in Massachusetts! Went to University of Massachusetts, Amherst (2014-2018) and moved to Phoenix following graduation to start my professional career as an Engineer at Intel. Back in Boston in 2021 to work for Siemens.
+                <h3 className="text-white"> I grew up on Cape Cod in Massachusetts, and went to University of Massachusetts, Amherst (2014-2018) for a B.S. in Chemical Engineering. I then and moved to Phoenix and followed graduation by starting my professional career as an Engineer at Intel. As June 2021, I am back in Boston working as an Engineer for Siemens Healthineers.
                 </h3>
                 <hr className='aboutLine my-5'/>
 
                 <h2 className="text-primary mb-3 darken"> Professional Summary:</h2>
-                <h3 className="text-white"> I am Chemical Process Engineer, with 4 years of work experience at Intel and Siemens. I completed Coding Dojo - (3x) Full-Stack Software Engineering Bootcamp. I am in pursuit of a <u>full-time</u> Software Engineering position!</h3>
+                <h3 className="text-white"> I am Chemical Process Engineer, with 4 years of work experience at Intel and Siemens. I just graduated from Coding Dojo - (3x) Full-Stack Software Engineering Bootcamp in August 2022. I am in pursuit of trasnitioning from a Chemical Engineer to a <u>full-time</u> Software Engineer!</h3>
                 <hr className='aboutLine my-5'/>
 
                 <h2 className="text-primary mb-3 darken"> Educational/Industrial Skills:</h2>
@@ -28,7 +28,7 @@ const About = () => {
                 </h3>
                 <hr className='aboutLine my-5'/>
 
-                <div className="d-flex justify-content-center"><button className="btn btn-primary mb-5"><Link className="text-decoration-none text-white" to={"/PortfolioResume"}>Full Resume →</Link></button></div>
+                <div className="d-flex justify-content-center"><button className="btn btn-primary mb-5"><Link className="text-decoration-none text-white" to={"/Portfolio/Resume"}>Full Resume →</Link></button></div>
 
             
             </div>

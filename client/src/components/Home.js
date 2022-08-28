@@ -76,13 +76,16 @@ const Home = (props) => {
 
 document.body.style.overflow = "hidden"
 
+function delayReload(){
+    setTimeout(function() { window.location.reload(); }, 150);
+}
 
     return (
         <div id="home">
 
             <HomeMenu>
                 <div className="justify-content-center align-center"><h1 className="text-white"> Hello, my name is Jamie Ellis!</h1>
-                <button onClick={() => window.location.reload()} id='homeBtn' className="btn btn-primary"><Link className="text-decoration-none text-white" to={"/PortfolioAbout"}>View Portfolio</Link></button>
+                <button onClick={() => delayReload()} id='homeBtn' className="btn btn-primary"><Link className="text-decoration-none text-white" to={"/Portfolio/About"}>View Portfolio</Link></button>
                 </div>
             </HomeMenu>
 

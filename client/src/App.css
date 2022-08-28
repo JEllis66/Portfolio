@@ -70,12 +70,16 @@
   height: 70px;
 }
 
-#about, #contact,#resume{
-  height: 100%;
+#about, #contact, #resume, .resume, .contact{
+  height: 100% !important;
 }
 
 #projectsPage{
   height: 100%;
+}
+
+.contact{
+  height: 100vh;
 }
 
 #navVH{
@@ -100,8 +104,6 @@
   border-top: lightgray;
   border-bottom: lightgrey;
   text-align: start;
-  margin-left: 50px;
-  margin-bottom: 50px;
 }
 
 #projs{
@@ -137,17 +139,60 @@
 }
 
 #aboutContent{
-  margin-left: 30px;
+  /* margin-left: 30px; */
+
+  margin: 0px 30px 30px 30px;
 }
 
 .aboutLine{
   margin-top: 10px;
-  color: black;
+  color: lightgray;
   height: 3px;
 }
 
 .darken{
   background-color: rgb(48, 48, 48);
+}
+
+.grayed{
+  background-color: rgb(96,96,96);
+}
+
+#resumePDF{
+  width: 90vw;
+  height: 85vh;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#contactIMG{
+  height: 225px;
+  width: 225px;
+}
+
+#contactComp{
+  height: 88vh;
+  margin: 0vh 10vw ;
+  background-color: rgb(48, 48, 48);
+
+}
+
+#card{
+  min-height: 420px;
+  min-width: 750px;
+  max-height: 420px;
+  max-width: 750px;
+  overflow-y: visible;
+  overflow-x: visible;
+}
+
+.cardIcons{
+  height: 50px;
+  width: 50px;
+}
+
+.cardIcons:hover{
+  cursor: pointer;
 }
 
 /* .scrolly{
