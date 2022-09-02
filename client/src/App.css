@@ -171,13 +171,14 @@
 }
 
 #contactComp{
-  height: 88vh;
+  height: 90vh;
   margin: 0vh 10vw ;
   background-color: rgb(48, 48, 48);
 
 }
 
 #card{
+  position: fixed;
   min-height: 420px;
   min-width: 750px;
   max-height: 420px;
