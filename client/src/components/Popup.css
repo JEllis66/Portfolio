@@ -1,10 +1,12 @@
 
 .popup{
     position: fixed;
-    top: 50%;
+    /* top: 5%; */
+    padding-top: 30px;
     left: 50%;
-    transform:translate(-50%,-50%);
+    transform:translate(-50%,0%);
     width: 100vw;
+    height: 100vh;
     z-index: 9;
     box-shadow: rgba(0,0,0,0.0) 30px 30px 300px;
 }

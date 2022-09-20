@@ -1,5 +1,4 @@
 import React from "react";
-import {Link} from "react-router-dom";
 import profpic from "../images/je2022.png";
 import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
@@ -23,10 +22,10 @@ const Contact = () => {
                 </div>
                 <div className="d-flex justify-content-between mt-2 mb-0">
                     <div></div>
-                    <img className="cardIcons" src={github}/>
-                    <img className="cardIcons" src={linkedin}/>
-                    <img className="cardIcons" src={facebook}/>
-                    <img className="cardIcons" src={gmail}/>
+                    <a href={"https://github.com/JEllis66"}> <img className="cardIcons" src={github}/></a>
+                    <a href="https://www.linkedin.com/in/jellis66/"><img className="cardIcons" src={linkedin}/></a>
+                    <a href="https://www.facebook.com/jamie.ellis.790/"><img className="cardIcons" src={facebook}/></a>
+                    <a href="emailto:jamie@jtellis.com"><img className="cardIcons" src={gmail}/></a>
                     <div></div>
                 </div>
                 

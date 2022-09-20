@@ -6,9 +6,9 @@ import profpic from "../images/je_logo_short.png";
 const Navbar = () => {
 
     return (
-        <div className="d-flex justify-content-between pt-3 px-3" id="navigationBar">
+        <div className="d-flex justify-content-between pt-3 px-3 mb-2" id="navigationBar">
             <div className="d-flex justify-content-start">
-                <img id="profPicNav" className='img-fluid' src={profpic}/>
+                <img id="profPicNav" className='img-fluid pb-2' src={profpic}/>
             </div>
             <div className="lg-col-2 xs-col-1"></div>
             <div className="d-flex justify-content-end xs-col-9 lg-col-6 pt-2">
