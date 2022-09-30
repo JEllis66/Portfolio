@@ -1,6 +1,6 @@
 import React from "react";
 import './App.css';
-import Home from "./components/Home"
+import PortfolioHome from "./view/PortfolioHome"
 import PortfolioAbout from "./view/PortfolioAbout"
 import PortfolioProjects from "./view/PortfolioProjects"
 import PortfolioResume from "./view/PortfolioResume"
@@ -14,7 +14,7 @@ function App() {
       <div className="App">
       
           <Routes>
-              <Route element={<Home/>} path="/" />
+              <Route element={<PortfolioHome/>} path="/" />
               <Route element={<PortfolioAbout/>} path="/Portfolio/About" />
               <Route element={<PortfolioProjects/>} path="/Portfolio/Projects" />
               <Route element={<PortfolioResume/>} path="/Portfolio/Resume" />

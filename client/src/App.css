@@ -192,6 +192,10 @@
   width: 50px;
 }
 
+#contactLinks{
+  height: 50px;
+}
+
 .cardIcons:hover{
   cursor: pointer;
 }
@@ -220,6 +224,11 @@
 .currentPage{
     color: #ff003c !important;
 }
+
+.projectLinks{
+  font-size: 14pt;
+}
+
 
 @keyframes blinker {
   0% {

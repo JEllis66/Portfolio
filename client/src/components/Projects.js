@@ -64,13 +64,14 @@ const Projects = () => {
                         <div id="details1" className="whiten">
                             <h3 className="text-primary whiten"><a className="text-decoration-none whiten" href="http://numericle.ddns.net">Numericle:</a> <span className="text-secondary whiten">MERN Application - </span></h3>
                             <p className="text-secondary detailText whiten">Find the missing character's of the daily equation that matches the given Daily Solution, "Wordle" Style!</p>
-                            <p className="whiten"><span><a className="whiten text-decoration-none" href="http://numericle.ddns.net"> Link to deployed Project</a></span> | <span><a className="whiten text-decoration-none" href="https://github.com/JEllis66/Numericle-Deployment"> Link to code </a></span> <img id='gitimg' src={git}/></p>
+                            <p className="whiten"><span><a className="whiten text-decoration-none projectLinks" href="http://numericle.ddns.net"> Link to deployed Project</a></span> <span className="projectLinks"></span>| <span><a className="whiten text-decoration-none projectLinks" href="https://github.com/JEllis66/Numericle-Deployment"> Link to Github Repo </a></span> <img id='gitimg' src={git}/></p>
                         </div>
                         :
                         <div className="whiten" id="details2">
                             <h3 className="whiten"><a className="text-danger text-decoration-none whiten" href="#">Lancaster's Theater:</a> <span className="text-secondary whiten"> Java/Spring Application - </span></h3>
-                            <p className="text-secondary detailText whiten">An application for an interactive Murder Mystery Party!</p>
-                            <p className="whiten"><span><a className="whiten text-decoration-none" href="#"> Link to deployed Project</a></span> | <span><a className="whiten text-decoration-none" href="https://github.com/JEllis66/Murder_Mystery"> Link to code </a></span> <img id='gitimg' src={git}/></p>
+                            <p className="text-secondary detailText whiten mb-0">An application for an interactive Murder Mystery Party!</p>
+                            <p className="text-secondary detailText whiten mt-0">Create any assortment of characters profiles for a unique experience each time! </p>
+                            <p className="whiten"><span><a className="whiten text-decoration-none projectLinks" href="https://github.com/JEllis66/Murder_Mystery"> Link to Github Repo </a></span> <img id='gitimg' src={git}/></p>
                         </div>
                     }
                 </div>

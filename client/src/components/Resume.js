@@ -11,8 +11,7 @@ const Resume = () => {
         <div>
             <div className="d-flex justify-content-around px-5 mb-5">
                 <button className="btn btn-danger"><a href={resume} download className="text-decoration-none text-white">Download Resume ↓</a></button>
-                <button className="btn btn-secondary"><a href="mailto:jamie@jtellis.com" className="text-decoration-none text-white">Email Jamie</a></button>
-                <button className="btn btn-primary"><Link to={"/Portfolio/Contact"} className="text-decoration-none text-white">All Contact Info</Link></button>
+                <button className="btn btn-primary"><a href="mailto:jamie@jtellis.com" className="text-decoration-none text-white">Email Jamie</a></button>
             </div>
             <div>
                 <h2 className="text-secondary">Full Resume:</h2>

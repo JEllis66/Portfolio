@@ -1,15 +1,17 @@
 
 .popup{
     position: fixed;
-    /* top: 75px; */
-    top: 35vh;
-    padding-top: 30px;
+    /* left: 0%;
+    min-width: 100vw;
+    height: fit-content;
+    margin: 0px;
+    z-index: 3;
+    top: 150px; */
+    top: 100px;
     left: 50%;
-    transform:translate(-50%);
+    transform:translateX(-50%, -50%);
     width: 100vw;
-    height: 100vh;
     z-index: 9;
-    box-shadow: rgba(0,0,0,0.0) 30px 30px 300px;
 }
 
 .popup-inner {

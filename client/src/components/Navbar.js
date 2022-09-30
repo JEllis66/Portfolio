@@ -8,38 +8,35 @@ const Navbar = props => {
     const [pagePosition, setPagePosition] = useState("home");
 
     function changePage(page){
-        console.log("1")
-        setGreen();
-        switch (page){
-            case "home":
-                console.log("home")
-                document.getElementById("homeLink").className = "text-decoration-none mx-2 navvy currentPage";
-                break;
-            case "about":
-                console.log("about")
-                document.getElementById("aboutLink").className = "text-decoration-none mx-2 navvy currentPage";
-                break;
-            case "projects":
-                console.log("projects")
-                document.getElementById("projectsLink").className = "text-decoration-none mx-2 navvy currentPage";
-                break;
-            case "resume":
-                console.log("resume")
-                document.getElementById("resumeLink").className = "text-decoration-none mx-2 navvy currentPage";
-                break;
-            case "contacts":
-                console.log("contacts")
-                document.getElementById("contactsLink").className = "text-decoration-none mx-2 navvy currentPage";
-                break;
-        }
+        setGreen(page);
+        setPagePosition(page);
+        changeRed();
     }
 
-    function setGreen(){
-        document.getElementById("homeLink").className = "text-decoration-none mx-2 navvy"
-        document.getElementById("aboutLink").className = "text-decoration-none mx-2 navvy"
-        document.getElementById("projectsLink").className = "text-decoration-none mx-2 navvy"
-        document.getElementById("resumeLink").className = "text-decoration-none mx-2 navvy"
-        document.getElementById("contactLink").className = "text-decoration-none mx-2 navvy"
+    function setGreen(page){
+        document.getElementById(page).className = "text-decoration-none mx-2 navvy";
+    }
+
+    const changeRed = () => {
+        setTimeout(function() {
+            switch (pagePosition){
+                case (pagePosition === "home"):
+                    document.getElementById("homeLink").className = "text-decoration-none mx-2 navvy currentPage";
+                    break;
+                case (pagePosition === "about"):
+                    document.getElementById("aboutLink").className = "text-decoration-none mx-2 navvy currentPage";
+                    break;
+                case (pagePosition === "projects"):
+                    document.getElementById("projectsLink").className = "text-decoration-none mx-2 navvy currentPage";
+                    break;
+                case (pagePosition === "resume"):
+                    document.getElementById("resumeLink").className = "text-decoration-none mx-2 navvy currentPage";
+                    break;
+                case (pagePosition === "contacts"):
+                    document.getElementById("contactsLink").className = "text-decoration-none mx-2 navvy currentPage";
+                    break;
+            }
+        }, 100)
     }
 
     return (
@@ -49,11 +46,37 @@ const Navbar = props => {
             </div>
             <div className="lg-col-2 xs-col-1"></div>
             <div className="d-flex justify-content-end xs-col-9 lg-col-6 pt-2">
-                <Link to={"/"} id="homeLink" onclick={changePage("home")} className="text-decoration-none mx-2 navvy currentPage">Home</Link>
-                <Link to={"/Portfolio/About"} id="aboutLink"  onclick={changePage("about")}  className="text-decoration-none mx-2 navvy">About</Link>
-                <Link to={"/Portfolio/Projects"} id="projectsLink"  onclick={changePage("projects")}  className="text-decoration-none mx-2 navvy">Projects</Link>
-                <Link to={"/Portfolio/Resume"} id="resumeLink"  onclick={changePage("reusume")}  className="text-decoration-none mx-2 navvy">Resume</Link>
-                <Link to={"/Portfolio/Contact"} id="contactLink"  onclick={changePage("contact")}  className="text-decoration-none mx-2 navvy">Contact</Link>
+                {
+                    pagePosition === "home" ?    
+                        <Link to={"/"} id="homeLink" onClick={()=>changePage("home")} className="text-decoration-none mx-2 navvy currentPage">Home</Link>
+                        :
+                        <Link to={"/"} id="homeLink" onClick={()=>changePage("home")} className="text-decoration-none mx-2 navvy">Home</Link>
+                }
+                {
+                    pagePosition === "about" ?    
+                        <Link to={"/Portfolio/About"} onClick={()=>changePage("about")} id="aboutLink"  className="text-decoration-none mx-2 navvy currentPage">About</Link>
+                        :
+                        <Link to={"/Portfolio/About"} onClick={()=>changePage("about")} id="aboutLink"  className="text-decoration-none mx-2 navvy">About</Link>
+                }
+                {
+                    pagePosition === "projects" ?    
+                        <Link to={"/Portfolio/Projects"} onClick={()=>changePage("projects")} id="projectsLink"  className="text-decoration-none mx-2 navvy currentPage">Projects</Link>
+                        :
+                        <Link to={"/Portfolio/Projects"} onClick={()=>changePage("projects")} id="projectsLink"  className="text-decoration-none mx-2 navvy">Projects</Link>
+                }
+                {
+                    pagePosition === "resume" ?    
+                        <Link to={"/Portfolio/Resume"} onClick={()=>changePage("resume")} id="resumeLink"  className="text-decoration-none mx-2 navvy currentPage">Resume</Link>
+                        :
+                        <Link to={"/Portfolio/Resume"} onClick={()=>changePage("resume")} id="resumeLink"  className="text-decoration-none mx-2 navvy">Resume</Link>
+                }
+                {
+                    pagePosition === "contact" ?    
+                        <Link to={"/Portfolio/Contact"} onClick={()=>changePage("contact")} id="contactLink"  className="text-decoration-none mx-2 navvy currentPage">Contact</Link>
+                        :
+                        <Link to={"/Portfolio/Contact"} onClick={()=>changePage("contact")} id="contactLink"  className="text-decoration-none mx-2 navvy">Contact</Link>
+                }
+                
             </div>
         </div>
     )

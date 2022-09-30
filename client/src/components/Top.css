@@ -1,0 +1,21 @@
+
+.popupbutton{
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    /* transform:translateX(-50%, -50%); */
+    width: 40px;
+    height: 40px;
+    z-index: 9;
+}
+
+.popupbutton-inner {
+    z-index: 10;
+    background-color: gold;
+    color: white;
+    font-size: 16pt;
+    border-radius: 1em;
+}
+
+
+
