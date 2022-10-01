@@ -75,7 +75,6 @@ function delayReload(){
 
             <div>
                 <h1 className="text-primary darken mb-5"> Hello, my name is Jamie Ellis!</h1>
-                <hr/>
                 <div className="d-flex row justify-content-around">
                     <div className="col-1"></div>
                     <div className="col-xs-10 col-md-4">
@@ -83,7 +82,7 @@ function delayReload(){
                     </div>
                     <div className="col-1"></div>
                     <div className="col-1"></div>
-                    <div className="col-xs-10 col-md-4 d-flex-inline text-center mt-5 mb-4">   
+                    <div className="col-xs-10 col-md-4 d-flex-inline text-center mt-3 mb-4">   
                         <h2 className="text-white mt-5">Email: jamie@jtellis.com</h2>
                         <h2 className="text-white">Phone: (774) 444-6405</h2>
                     </div> 

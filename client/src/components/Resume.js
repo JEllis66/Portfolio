@@ -15,7 +15,7 @@ const Resume = () => {
             </div>
             <div>
                 <h2 className="text-secondary">Full Resume:</h2>
-                <embed id="resumePDF" src={resume}/>
+                <iframe id="resumePDF" src={resume}/>
             </div>
         </div>
     )
