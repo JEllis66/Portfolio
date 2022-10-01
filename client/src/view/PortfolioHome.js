@@ -26,8 +26,9 @@ const PortfolioHome = () => {
     const [resumePopup, setResumePopup] = useState(false);
 
     const scrollToPos = (elementRef,str) => {
+        
+        popup(str);
         setPagePosition(str);
-        popup(str)
         window.scrollTo({
             top: elementRef.current.offsetTop,
             behavior: "smooth",
@@ -35,25 +36,27 @@ const PortfolioHome = () => {
     }
 
     function goHome(){
-            scrollToPos(homeSection,"homeSection")
-            setAboutPopup(false);
-            setProjectsPopup(false);
-            setResumePopup(false);
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        })
+        setAboutPopup(false);
+        setProjectsPopup(false);
+        setResumePopup(false);
     }
 
     function popup(input){
-        switch(input){
-            case input === "homeSection":
-                break;
-            case input === "aboutSection":
-                setAboutPopup(true)
-                break;
-            case input === "projectSection":
-                setProjectsPopup(true)
-                break;
-            case input === "resumeSection":
-                setResumePopup(true)
-                break;
+        if(input === "homeSection"){
+            return
+        } else if(input === "aboutSection"){
+            setAboutPopup(true)
+            return
+        } else if(input === "projectsSection"){
+            setProjectsPopup(true)
+            return
+        } else if(input === "resumeSection"){
+            setResumePopup(true)
+            return
         }
     }
 
@@ -66,7 +69,7 @@ const PortfolioHome = () => {
                     <img id="profPicNav" className='img-fluid pb-2' src={profpic}/>
                 </div>
                 <div className="lg-col-2 xs-col-1"></div>
-                <div className="d-flex justify-content-end xs-col-9 lg-col-6 pt-2">
+                <div className="d-flex justify-content-end xs-col-9 lg-col-6 pt-3">
                     {
                         pagePosition === "homeSection" ?    
                             <h3 onClick={()=>scrollToPos(homeSection,"homeSection")} className="text-decoration-none mx-2 navvy currentPage">Home</h3>

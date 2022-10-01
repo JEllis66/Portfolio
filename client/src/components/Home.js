@@ -2,10 +2,10 @@ import React from "react";
 import {Link} from "react-router-dom";
 import {useState} from 'react';
 import HomeMenu from "./HomeMenu.js"
-import profpic from "../images/profilepic.jpeg";
+import profpic from "../images/je2022.png";
 import github from "../images/github.png";
 import linkedin from "../images/linkedin.png";
-import facebook from "../images/facebook.png";
+import phone from "../images/phone.png";
 import gmail from "../images/gmail.png";
 
 const Home = (props) => {
@@ -74,7 +74,7 @@ function delayReload(){
         <div className="darken">
 
             <div>
-                <h1 className="text-white mb-5"> Hello, my name is Jamie Ellis!</h1>
+                <h1 className="text-primary darken mb-5"> Hello, my name is Jamie Ellis!</h1>
                 <hr/>
                 <div className="d-flex row justify-content-around">
                     <div className="col-1"></div>
@@ -89,13 +89,16 @@ function delayReload(){
                     </div> 
                     <div className="col-1"></div>
                 </div>
+                <div className="d-flex justify-content-between mt-5 mb-0">
+                    <div></div>
+                    <a href="tel:7744446405"><img className="cardIcons" src={phone}/></a>
+                    <a href={"https://github.com/JEllis66"} id="git"> <img className="cardIcons" src={github}/></a>
+                    <a href="https://www.linkedin.com/in/jellis66/"><img className="cardIcons" src={linkedin}/></a>
+                    <a href="emailto:jamie@jtellis.com"><img className="cardIcons" src={gmail}/></a>
+                    <div></div>
+                </div>
             </div>
-{/* 
-            <div className="mx-4 my-5">
-                <hr className="text-white"/>
-                <h2 className="text-primary darken">Timeline:</h2>
-                <hr className="text-white"/>
-            </div> */}
+
 
             {/* <div className="justify-content-center align-center">
                 <h1 className="text-white mb-5"> Hello, my name is Jamie Ellis!</h1>

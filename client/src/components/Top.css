@@ -4,17 +4,26 @@
     top: 25px;
     right: 25px;
     /* transform:translateX(-50%, -50%); */
-    width: 40px;
+    width: 150px;
     height: 40px;
     z-index: 9;
+    
 }
 
 .popupbutton-inner {
+    padding: 20px 10px 5px;
+    text-align: center;
+    vertical-align:middle;
+    align-self: center;
     z-index: 10;
-    background-color: gold;
+    background-color: #8910ae;
     color: white;
     font-size: 16pt;
-    border-radius: 1em;
+    border-radius: 3em;
+}
+
+.popupbutton:hover{
+    cursor: pointer;
 }
 
 

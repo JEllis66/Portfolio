@@ -1,10 +1,6 @@
 import React from "react";
 import './App.css';
 import PortfolioHome from "./view/PortfolioHome"
-import PortfolioAbout from "./view/PortfolioAbout"
-import PortfolioProjects from "./view/PortfolioProjects"
-import PortfolioResume from "./view/PortfolioResume"
-import PortfolioContact from "./view/PortfolioContact"
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -15,10 +11,6 @@ function App() {
       
           <Routes>
               <Route element={<PortfolioHome/>} path="/" />
-              <Route element={<PortfolioAbout/>} path="/Portfolio/About" />
-              <Route element={<PortfolioProjects/>} path="/Portfolio/Projects" />
-              <Route element={<PortfolioResume/>} path="/Portfolio/Resume" />
-              <Route element={<PortfolioContact/>} path="/Portfolio/Contact" />
           </Routes>
         
 

@@ -229,6 +229,11 @@
   font-size: 14pt;
 }
 
+#git{
+  border-radius: 50em;
+  padding: -5px;
+  background-color: white !important;
+}
 
 @keyframes blinker {
   0% {
