@@ -51,6 +51,11 @@ const Projects = () => {
 
     return (
         <div id="projectPage" className="justify-content-center mb-5 pb-5 whiten">
+
+                <hr className='text-black mt-2'/>
+                <h1 className="text-success align-text-middle text-center mb-4">Projects:</h1>
+                <hr className='text-black mb-3'/>
+
             <img id="projs" src={pic}/>
             <div id="projButtons" className="d-flex justify-content-around whiten">   
                 <button onClick={() => toggleDetails()} className="btn btn-primary mr-1">Details {direction}</button>

@@ -64,12 +64,9 @@ const PortfolioHome = () => {
 
         <div id="contact darken">
 
-            <div className="d-flex justify-content-between pt-3 px-3 mb-2" id="navigationBar">
-                <div className="d-flex justify-content-start">
-                    <img id="profPicNav" className='img-fluid pb-2' src={profpic}/>
-                </div>
+            <div className="d-flex justify-content-center pt-3 px-3 mb-2" id="navigationBar">
                 <div className="lg-col-2 xs-col-1"></div>
-                <div className="d-flex justify-content-end xs-col-9 lg-col-6 pt-3">
+                <div className="d-flex justify-content-around xs-col-9 lg-col-6 pt-3">
                     {
                         pagePosition === "homeSection" ?    
                             <h3 onClick={()=>scrollToPos(homeSection,"homeSection")} className="text-decoration-none mx-2 navvy currentPage">Home</h3>

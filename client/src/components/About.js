@@ -6,10 +6,9 @@ const About = () => {
     return (
         <div className="py-4 scrolly">
             <div id="aboutContent" className="d-flex-inline justify-content-start text-start pt-3">
-                <hr className='aboutLine mt-2'/>
-
-                <h1 className="text-warning align-text-middle text-center mb-4">Timeline:</h1>
                 
+                <hr className='aboutLine mt-2'/>
+                <h1 className="text-warning align-text-middle text-center mb-4">About Me:</h1>
                 <hr className='aboutLine mb-3'/>
 
                 <h2 className="text-primary mb-3 darken"> Background:</h2>
